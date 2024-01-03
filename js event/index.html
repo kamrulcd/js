@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js events</title>
+</head>
+<body>
+    <button onclick="console.log('clicked')">click me</button>
+    <button onclick="console.log('another')">another click me</button>
+    <button onclick="document.body.style.backgroundColor='green'">make green</button>
+    <!-- making green the bg.by inline -->
+    <button onclick="makeRed()">make red</button>
+    <!-- making bg red by embedded onclick function -->
+    <button onclick="makeBlue()">make blue</button>
+    <!-- this is done from external js file -->
+    <button id="yellow">make yellow</button>
+    <button id="orange">make orange</button>
+    <button id="purple">purple </button>
+
+    <p id="text">this is aplin text</p>
+    <button onclick="clicked()" id="button">change the plain text</button>
+
+    <!-- input field update -->
+    <br>
+    <br>
+    <!-- instead textarea tag also a option -->
+    <div id="container">
+        <input type="text" name="" id="input">
+    <button id="btn">submit</button>
+    <p id="default">default text</p>
+    </div>
+    
+    <!-- //using keyup -->
+    <p id="secret">a secret info </p>
+    <textarea name="type delete" id="textField" cols="30" rows="10"></textarea>
+    <button id="delete" disabled>delete</button>
+    <script src="events.js"></script>
+    <script>
+        function makeRed(){
+            document.body.style.backgroundColor='red'
+        }
+    </script>
+</body>
+</html>

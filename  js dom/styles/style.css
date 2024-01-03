@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+ul{
+    list-style: circle;
+    
+}
+#mango{
+    color: yellowgreen;
+}
+
+.main li {
+    background-color: blanchedalmond;
+}
+
+.footer{
+    text-align: right;
+}
